@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  </head>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <head>
+        <title>Formula 1 Advanced Web Page</title>
+        <meta name="keywords" content="cars, Formula 1, Races">
+
+        <link rel="stylesheet" type="text/css" href="App.css">
+
+<style>
+            table, th, td {border:3px solid black;}
+            </style>
+
+<style> 
+    hr {
+        border: none;
+        border-top: 3px solid red;
+        margin: 20px 0;
+    }
+    </style>
+
+    </head>
+
+        <section id="Welcome"> 
+            <br>
+            <br>
+            <br>
+
+        <div class="F1A">
+        <section class="F1A"> </section>
+                <h1>Formula 1 Advanced </h1>
+
+    </div>
+
+    <body>
+    
+    <div class="backdrop">
+        <img src="./images/F1 RedBull.jpg" alt="RedBull F1 car" class="background-image">
+        <h1 style="color: white;"> Welcome! </h1>
+        <div class="title-page-writing"> The place that makes fast and furious come to life, it's light's out and away we go! Get all the info you need to keep you up to date and ahead of the curve! </div>
+      </div>
+
+      <script language="JavaScript" type="text/JavaScript"> 
+        function search() {
+            const p = document.getElementById("summaryText");
+            let keyword = document.getElementById("keyword").value;
+            if (keyword !== "") {
+            let regExp = new RegExp (keyword, "gi");
+            p.innerHTML = (p.textContent).replace(regExp, "<mark>$&</mark>");
+            }
+        }
+      </script>
+      <form id="SearchBox">
+        <input type="text" id="keyword" placeholder="Enter a keyword to search">
+        <input type="button" value="Search" onClick="search();">
+    </form>
+    
+</section>
+
+    <br>
+
+    <section id="Upcoming Races">
+        <br>
+        <h1>Upcoming Races</h1>
+        <br>
+        <caption> <b>Formula 1 Race Locations 2024</b> </caption>
+        <br> 
+        <div class="UpcomingRacesTable">
+        <table id="upcomingRacesTable">
+        <tr>
+            <th>Country</th>
+            <th>City</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td> <img src="./images/Bahrain flag.png" alt="Bahrain flag" width="45" height="25"> Bahrain </td>
+            <td>Sakhir</td>
+            <td>29-02 February</td>       
+        </tr>
+        <tr>
+            <td> <img src="./images/Saudi Flag.png" alt="Saudi Arabian flag" width="45" height="25"> Saudi Arabia </td>
+            <td>Jeddah</td>
+            <td>7-9 March</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Australia Flag.png" alt="Australian flag" width="45" height="25"> Australia </td>
+            <td>Melbourne</td>
+            <td>22-24 March</td>
+        </tr> 
+        <tr>
+            <td> <img src="./images/Japan Flag.png" alt="Japanese flag" width="45" height="25"> Japan </td>
+            <td>Suzuka</td>
+            <td>5-7 April</td>
+        </tr>   
+        <tr>
+            <td> <img src="./images/China Flag.png" alt="Chinese flag" width="45" height="25"> China </td>
+            <td>Shanghai</td>
+            <td>19-21 April</td>
+        </tr>   
+        <tr>
+            <td> <img src="./images/USA Flag.png" alt="USA flag" width="45" height="25"> United States </td>
+            <td>Miami</td>
+            <td>3-5 May</td>
+        </tr> 
+        <tr>
+            <td> <img src="./images/Italian Flag.png" alt="Italian flag" width="45" height="25"> Italy </td>
+            <td>Imola</td>
+            <td>17-19 May</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Monaco Flag.png" alt="Monaco flag" width="45" height="25"> Monaco </td>
+            <td>Monte Carlo</td>
+            <td>24-26 May</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Canada Flag.png" alt="Canadian flag" width="45" height="25"> Canada </td>
+            <td>Montreal</td>
+            <td>7-9 June</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Spain Flag.png" alt="Spannish flag" width="45" height="25"> Spain </td>
+            <td>Catalunya</td>
+            <td>21-23 June</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Austria Flag.png" alt="Austrian flag" width="45" height="25"> Austria </td>
+            <td>Spielberg</td>
+            <td>28-30 June</td>
+
+            <tr>
+                <td> <img src="./images/Brittain Flag.png" alt="Brittish flag" width="45" height="25"> Great Brittain </td>
+                <td>Silverstone</td>
+                <td>5-7 July</td>
+            </tr>
+        
+        </tr>
+        <tr>
+            <td> <img src="./images/Hungary Flag.jpg" alt="Hungarian flag" width="45" height="25"> Hungary </td>
+            <td>Budapest</td>
+            <td>19-21 July</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Belgium Flag.png" alt="Belgian flag" width="45" height="25"> Belgium </td>
+            <td>Spa-Francorchamps</td>
+            <td>26-28 July</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Netherlands Flag.png" alt="Dutch flag" width="45" height="25"> Netherlands </td>
+            <td>Zandvoort</td>
+            <td>23-25 August</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Italian Flag.png" alt="Italian flag" width="45" height="25"> Italy </td>
+            <td>Monza</td>
+            <td>30-1 August-September</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Azerbaijan Flag.png" alt="Azerbaijan flag" width="45" height="25"> Azerbaijan </td>
+            <td>Baku</td>
+            <td>13-15 September</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Singapore Flag.png" alt="Singaporian flag" width="45" height="25"> Singapore </td>
+            <td>Marina Bay</td>
+            <td>20-22 September</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/USA Flag.png" alt="USA flag" width="45" height="25"> United States </td>
+            <td>Austin</td>
+            <td>18-20 October</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Mexico Flag.png" alt="Mexican flag" width="45" height="25"> Mexico </td>
+            <td>Mexico City</td>
+            <td>25-27 October</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Brazil Flag.png" alt="Brazilian flag" width="45" height="25"> Brazil </td>
+            <td>Sao Paulo</td>
+            <td>1-3 November</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/USA Flag.png" alt="USA flag" width="45" height="25"> United States </td>
+            <td>Las Vegas</td>
+            <td>21-23 November</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Qatar Flag.png" alt="Qatar flag" width="45" height="25"> Qatar </td>
+            <td>Lusail</td>
+            <td>29-1 November-December</td>
+        </tr>
+        <tr>
+            <td> <img src="./images/Abu Dhabi Flag.jpg" alt="Abu Dhabi flag" width="45" height="25"> Abu Dhabi </td>
+            <td>Yas Island</td>
+            <td>6-8 December</td>
+        </tr>
+        </table>
+    </div>
+    <br>
+    <hr>
+</section>
+
+    <br>
+    <section id="Teams and Drivers">
+        <br>
+        <head>
+        <h1>Teams and Drivers</h1>
+        </head>
+        <br>
+<div class="container">
+    <div class="grid">
+        <div class="grid-item"> <b> Team </b> </div>
+              <div class="grid-item"> <b> Driver 1 </b> </div>
+              <div class="grid-item"> <b> Driver 2 </b></div>  
+              <div class="grid-item">Alpine</div>
+              <div class="grid-item">Esteban Ocon</div>
+              <div class="grid-item">Pierre Gasly</div>  
+              <div class="grid-item">Aston Martin</div>
+              <div class="grid-item">Fernando Alonso</div>
+              <div class="grid-item">Lance Stroll</div>  
+              <div class="grid-item">Ferrari</div>
+              <div class="grid-item">Charles Leclerc</div>
+              <div class="grid-item">Carlos Sainz</div>  
+              <div class="grid-item">Haas</div>
+              <div class="grid-item">Kevin Magnussen</div>
+              <div class="grid-item">Nico Hulhenberg</div>  
+              <div class="grid-item">McLaren</div>
+              <div class="grid-item">Lando Norris</div>
+              <div class="grid-item">Oscar Piastri</div> 
+              <div class="grid-item">Mercedes</div>
+              <div class="grid-item">George Russell</div>  
+              <div class="grid-item">Lewis Hamilton</div>
+              <div class="grid-item">Red Bull Racing</div>
+              <div class="grid-item">Max Verstappen</div> 
+              <div class="grid-item">Sergio Perez</div>
+              <div class="grid-item">Stake F1 Team Kick Sauber</div>  
+              <div class="grid-item">Valtteri Bottas</div>
+              <div class="grid-item">Zhou Guanyu</div>
+              <div class="grid-item">Visa Cash App RB Formula One Team</div> 
+              <div class="grid-item">Yuki Tsunoda</div>
+              <div class="grid-item">Daniel Ricciardo</div>
+              <div class="grid-item">Williams</div> 
+              <div class="grid-item">Alex Albon</div>
+              <div class="grid-item">Logan Sargeant</div>
+    </div>
+    <div class="video">
+
+        <iframe width="800" height="400" src="./videos/Daniel Ricciardo Interview.mp4" alt="Daniel Ricciardo Interview" 
+        frameborder="0"> </iframe>
+        <figcaption> Daniel Ricciardo Interview </figcaption>
+    </div>
+</div>
+<div class="padding" id="blankSpace"></div>
+    <div class="text-box">
+    <p id="summaryText">After a very dominant year from Red Bull, the rest of the table have some work to do in preparation for the 2024 season. 
+        Max Verstappen led almost every race without competition making this 2023 season a blow out! 
+        The Red showed the highest top speed without sacrificing time around corners, making the RB19 incredibly dominant. 
+        Max's teammate Sergio Perez had a great start to the year but struggled to find his footing again for the rest of the season. 
+        There was rumours about the transfer of Sergio Perez out of the Red Bull with his seat being filled with Aussie icon Daniel Ricciardo. 
+        Daniel took the place of Nyck de Vries only 10 races into his rookie season as Daniel was showing better test times around the track. 
+        Alpha Tauri being the sister team to Red Bull, was a test for Daniel to see if he could compete with Sergio on the track. 
+        The 2024 season is yet to see any driver change for Red Bull or Alpha Tauri as all four drivers remain the same as of now. 
+        However, Alpha Tauri have changed their name to Visa Cash App RB Formula One Team and Alfa Romeo have changed their name to Stake F1 Team Kick Sauber. 
+    </p>
+</div>
+<br>
+    <hr>
+    <section id="Placing, Points and Updates">
+        <br>
+        <h1>Placing, Points and Updates</h1>
+    <div class="flex.container">
+            <br>
+                  <div class="flex-container">
+                    <p>Last Season Champions</p>
+              <div> <img src="./images/Max Verstappen.png" alt="Max Verstappen" width="200" height="200"> <p> <b> 1st <br> Max Verstappen <br> Red Bull </b> </p> </div>
+              <div> <img src="./images/Sergio Perez.png" alt=">Sergio Perez" width="200" height="200"> <p> <b> 2nd <br> Sergio Perez <br> Red Bull </p> </b> </div>
+              <div> <img src="./images/Lewis Hamilton.png" alt="Lewis Hamilton" width="200" height="200"> <p> <b> 3rd <br> Lewis Hamilton <br> Mercedes </p> </b> </div>  
+            <table class="PlacingPointsTable">
+<caption class="PnP"> Placing, Points and Updates </caption>
+            <br>   
+                <tr>
+                    <th>Place</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>1st</td>
+                    <td>25 points</td>
+                </tr>
+                <tr>
+                    <td>2nd</td>
+                    <td>18 points</td>
+                </tr>
+                <tr>
+                    <td>3rd</td>
+                    <td>15 points</td>
+                </tr>
+                <tr>
+                    <td>4th</td>
+                    <td>12 points</td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>10 points</td>
+                </tr>
+                <tr>
+                    <td>6th</td>
+                    <td>8 points</td>
+                </tr>
+                <tr>
+                    <td>7th</td>
+                    <td>6 points</td>
+                </tr>
+                <tr>
+                    <td>8th</td>
+                    <td>4 points</td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>2 points</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>1 point</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <p id="summaryText">Max Verstappen came first place by a long shot carrying Red Bull to the 2023 season Championship. 
+        A few new changes are being made for this new upcoming season of Formula 1. 
+        New tracks are making there way back in to the calender with Japan and China joining in. 
+        Another country is providing a new track and is also having it's time in the lime light being China - Shanghai. 
+        After fans last year were heartbroken that Italy - Imola was unable to host the race due to servere weather conditions,
+        the track is looking to redeem itself this year being placed at the end of the European summer. 
+        The 2023 season saw Imola flooded to the extent the race had to be cancelled. 
+        It's not just the Italian supporters hoping this year we get to see the magical track burn some rubber! 
+    </p>
+    </section>
+
+        <head>
+            <title>Image Gallery</title>
+          </head>
+            <div id="Carousel" class="Carousel">
+              <script src="App.js"></script>
+              <button class="arrow prev"> &larr; </button>
+              <div class="gallery">
+                <ul class="images">
+                  <li><img src="./images/Bahrain Track Image.JPG"> <p> Sakhir </p></li>
+                  <li><img src="./images/Saudi Arabia Track.JPG"> <p> Jeddah </p></li>
+                  <li><img src="./images/Australia Track.JPG"> <p> Melbourne </p></li>
+                  <li><img src="./images/Japan Track.JPG"> <p> Suzuka </p></li>
+                  <li><img src="./images/China Track.JPG"> <p> Shanghai </p></li>
+                  <li><img src="./images/Miami Track.JPG"> <p> Miami </p></li>
+                  <li><img src="./images/Imola Track.JPG"> <p> Imola </p></li>
+                  <li><img src="./images/Monaco Track.JPG"> <p> Monte Carlo </p></li>
+                  <li><img src="./images/Canada Track.JPG"> <p> Montreal </p></li>
+                  <li><img src="./images/Spain Track.JPG"> <p> Catalunya </p></li>
+                  <li><img src="./images/Austria Track.JPG"> <p> Spielberg </p></li>
+                  <li><img src="./images/Brittain Track.JPG"> <p> Silverstone </p></li>
+                  <li><img src="./images/Hungary Track.JPG"> <p> Budapest </p></li>
+                  <li><img src="./images/Belgium Track.JPG"> <p> Spa </p></li>
+                  <li><img src="./images/Netherlands Track.JPG"> <p> Zandvoort </p></li>
+                  <li><img src="./images/Monza Track.JPG"> <p> Monza </p></li>
+                  <li><img src="./images/Azerbaijan Track.JPG"> <p> Baku </p></li>
+                  <li><img src="./images/Singapore Track.JPG"> <p> Marina Bay </p></li>
+                  <li><img src="./images/Austin Track.JPG"> <p> Austin </p></li>
+                  <li><img src="./images/Mexico Track.JPG"> <p> Mexico City </p></li>
+                  <li><img src="./images/Brazil Track.JPG"> <p> Sao Paolo </p></li>
+                  <li><img src="./images/Las Vegas Track.JPG"> <p> Las Vegas </p></li>
+                  <li><img src="./images/Qatar Track.JPG"> <p> Lusail </p></li>
+                  <li><img src="./images/Abu Dhabi Track.JPG"> <p> Yas Island </p></li>
+                </ul>
+              </div>
+              <button class="arrow next"> &rarr; </button>
+            </div>
+        <hr>
+    </section>
+    <br>
+        <section id="Contact Us">
+          <div class="padding" id="blankSpace"></div>
+            <h1>Contact Us</h1>
+        <br>
+            <p id="summaryText"> If you wish to send us a message please fill out your first name, email and fil out the text box with the message you wish to send. <br>
+                We also have our email address and company location listed below along with our contact number if you wish to reach us that way. <br> 
+                Any feedback is appreciated and we hope you enjoy our content.
+            </p>
+            <div class="padding" id="blankSpace"></div>
+        <footer>   
+            <form method="post">
+                <input type="text" title="fullname" placeholder="Full Name*" required>
+                <div class="padding" id="blankSpace"></div>
+                <input type="text" title="email" placeholder="Email Address*" required>
+                <div class="padding" id="blankSpace"></div>
+                <textarea rows="7" cols="80" style="font-size:14pt;" placeholder="Enter your message*" required> </textarea>
+                <div class="padding" id="blankSpace"></div>
+                <button type="submit" style="height: 40px; width: 400px;font-size:14pt;">Send</button>
+            </form>
+            <div class="padding" id="blankSpace"></div>
+            <p>Author: Isaac Giannopoulos<br>
+            <br> 
+            Formula 1 Advanced 
+            <br> 
+            150 Livingston street, Ivanhoe VIC 3079 
+            <div class="padding" id="blankSpace"></div>
+            03 6949 2745
+            <br> 
+            <a href="mailto:isaac@formula1advanced.com.au">isaac@formula1advanced.com.au</a> 
+            <div class="padding" id="blankSpace"></div>
+            Copyright &copy; 2024
+            <br>
+            Privacy Statement
+            <br>
+            Terms and Conditions 
+            </p>
+        </footer>
+        <hr>
+    </section>
+  </body>
+    </html>
